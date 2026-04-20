@@ -25,7 +25,8 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
 
 /* ===== CUSTOM CURSOR ===== */
 .cursor-dot  { position:fixed; width:8px; height:8px; background:var(--orange); border-radius:50%; pointer-events:none; z-index:9999; transform:translate(-50%,-50%); transition:transform .1s; }
-
+.cursor-ring { position:fixed; width:34px; height:34px; border:2px solid var(--orange); border-radius:50%; pointer-events:none; z-index:9998; transform:translate(-50%,-50%); transition:all .15s ease; opacity:.55; }
+.cursor-ring.hovered { transform:translate(-50%,-50%) scale(1.7); opacity:.9; border-color:var(--orange2); }
 
 /* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar { width:4px; }
@@ -115,9 +116,6 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
   border: 3px solid rgba(255,107,0,0.55);
   z-index: 3;
   animation: rotateBorder 8s linear infinite;
-}
-.hero-photo-wrap {
-  display: none !important;
 }
 
 @keyframes glowPulse {

@@ -117,6 +117,9 @@ body { background: var(--bg); color: var(--text); font-family: var(--font-body);
   z-index: 3;
   animation: rotateBorder 8s linear infinite;
 }
+.hero-photo-wrap {
+  display: none !important;
+}
 
 @keyframes glowPulse {
   0%,100% { transform:scale(1); opacity:.7; }

@@ -1,14 +1,12 @@
 // ===== CUSTOM CURSOR =====
 const dot  = document.querySelector('.cursor-dot');
-const ring = document.querySelector('.cursor-ring');
+
 document.addEventListener('mousemove', e => {
   dot.style.left  = e.clientX + 'px';
   dot.style.top   = e.clientY + 'px';
-  setTimeout(() => { ring.style.left = e.clientX+'px'; ring.style.top = e.clientY+'px'; }, 80);
-});
+ 
 document.querySelectorAll('a,button,.service-card,.project-card,.skill-card,.contact-link').forEach(el => {
-  el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
-  el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
+
 });
 
 // ===== ACTIVE NAV ON SCROLL =====

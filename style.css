@@ -292,24 +292,46 @@ section { padding:5.5rem 6%; }
 
 /* ===== SKILLS ===== */
 #skills { }
-.skills-layout { display:grid; grid-template-columns:1fr 1fr; gap:4rem; margin-top:1rem; }
-.skill-category-title { font-family:var(--font-head); font-size:1rem; font-weight:700; color:var(--orange); margin-bottom:1.5rem; letter-spacing:.5px; }
-.skill-items { display:flex; flex-direction:column; gap:1.2rem; }
-.skill-item { }
-.skill-top { display:flex; justify-content:space-between; margin-bottom:.5rem; }
-.skill-name-text { font-size:.9rem; font-weight:600; }
-.skill-pct { font-family:var(--font-mono); font-size:.75rem; color:var(--orange); }
-.skill-bar-bg { height:5px; background:rgba(255,255,255,.06); border-radius:3px; overflow:hidden; }
-.skill-bar-fill { height:100%; background:linear-gradient(90deg,var(--orange),var(--orange2)); border-radius:3px; width:0; transition:width 1.4s cubic-bezier(.4,0,.2,1); }
 
-.skills-tags { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1.5rem; }
-.skills-tag {
-  padding:.5rem 1.1rem; border-radius:6px; font-size:.82rem; font-weight:600;
-  background:var(--surface); border:1px solid var(--border);
-  display:flex; align-items:center; gap:.5rem; transition:var(--transition);
+.skills-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
 }
-.skills-tag:hover { border-color:var(--orange); color:var(--orange); transform:translateY(-2px); }
-.skills-tag i { font-size:.9rem; }
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .7rem;
+    margin-top: 1.5rem;
+    max-width: 800px;
+}
+
+.skills-tag {
+    padding: .5rem 1.1rem;
+    border-radius: 6px;
+    font-size: .82rem;
+    font-weight: 600;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    transition: var(--transition);
+}
+
+.skills-tag:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+    transform: translateY(-2px);
+}
+
+.skills-tag i {
+    font-size: .9rem;
+}
 
 /* ===== EXPERIENCE ===== */
 #experience { background:var(--bg2); }
